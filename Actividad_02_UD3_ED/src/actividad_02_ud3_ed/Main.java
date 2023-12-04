@@ -12,11 +12,17 @@ import java.io.InputStreamReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
+/**
+ * Clase Main.
+ * @author jroddom0103
+ */
 public class Main {
     static BufferedReader dato = new BufferedReader(new InputStreamReader(System.in));
 
-   
+   /**
+    * Método principal de la clase Main
+    * @param args 
+    */
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
@@ -64,6 +70,13 @@ public class Main {
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es"+ saldoActual );
     }
+    
+    /**
+     * Realiza operaciones en la cuenta
+     * @param cuenta1
+     * @param cantidad
+     * @param opcion 
+     */
     public static void operativa_cuenta(CCuenta cuenta1, float cantidad,int opcion){
         if(opcion==2){
             try 
